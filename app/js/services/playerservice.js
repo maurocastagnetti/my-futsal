@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('fantasyApp.services.players', ['fantasyApp.services.firebaseRefs'])
+angular.module('myFutsalApp.services.players', ['myFutsalApp.services.firebaseRefs'])
     .factory('Players', ['FBURL', 'Firebase', 'angularFireCollection', 'FireRef',
         function(FBURL, Firebase, angularFireCollection, FireRef) {
             return {

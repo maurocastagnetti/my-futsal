@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('fantasyApp.services.fantasyTeams', [])
+angular.module('myFutsalApp.services.fantasyTeams', [])
     .factory('FantasyTeams', ['$q', 'angularFireCollection', 'FireRef',
         function($q, angularFireCollection, FireRef) {
             return {

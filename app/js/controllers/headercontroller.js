@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
+angular.module('myFutsalApp.controllers.header', ['myFutsalApp.services.login'])
   .controller('HeaderController', ['$scope', '$location', 'loginService', 'angularFire', 'FBURL', 
     function($scope, $location, loginService, angularFire, FBURL) {
 
@@ -14,9 +14,6 @@ angular.module('fantasyApp.controllers.header', ['fantasyApp.services.login'])
 
       $scope.navbarEntries = [
           {
-              "title": "NFL Teams",
-              "link": "/nflteams"
-          }, {
               "title": "Leagues",
               "link": "/leagues"
           }, {

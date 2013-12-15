@@ -3,7 +3,7 @@
  */
 'use strict';
 
-angular.module('fantasyApp.controllers.leagues', ['fantasyApp.services.leagues'])
+angular.module('myFutsalApp.controllers.leagues', ['myFutsalApp.services.leagues'])
     .controller('LeaguesController', ['$scope','$routeParams', '$location', 'angularFire', 'Leagues',
         function($scope, $routeParams, $location, angularFire, Leagues) {
 

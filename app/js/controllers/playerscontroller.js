@@ -3,12 +3,10 @@
  */
 'use strict';
 
-angular.module('fantasyApp.controllers.players', ['fantasyApp.services.players'])
-    .controller('PlayersController', ['$scope','$routeParams', 'angularFire', 'NFL', 'Players',
+angular.module('myFutsalApp.controllers.players', ['myFutsalApp.services.players'])
+    .controller('PlayersController', ['$scope','$routeParams', 'angularFire', 'Players',
         function ($scope, $routeParams, angularFire, NFL, Players) {
 
-            $scope.positions = NFL.positions;
-            $scope.nflteams = NFL.teams;
             $scope.searchsize = {
                 "limit": 10
             }

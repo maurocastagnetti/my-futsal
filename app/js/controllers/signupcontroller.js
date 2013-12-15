@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('fantasyApp.controllers.signup', [])
+angular.module('myFutsalApp.controllers.signup', [])
   .controller('SignupCtrl', ['$scope', 'loginService', '$location',
     function($scope, loginService, $location) {
 

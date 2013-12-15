@@ -1,7 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('fantasyApp.config', [])
+angular.module('myFutsalApp.config', [])
 
 app.config(['$routeProvider', 
     function($routeProvider) {
@@ -9,6 +9,10 @@ app.config(['$routeProvider',
       .when('/',        { templateUrl: 'views/default.html' })
       .when('/signin',  { templateUrl: 'views/users/signin.html' })
       .when('/signup',  { templateUrl: 'views/users/signup.html' })
+
+
+
+
       .when('/nflteams',{ templateUrl: 'views/nfl/list.html', authRequired: true })
       .when('/nflteams/:nflTeamId', { templateUrl: 'views/nfl/view.html', authRequired: true })
       .when('/leagues',                 { templateUrl: 'views/leagues/list.html', authRequired: true })
@@ -21,6 +25,10 @@ app.config(['$routeProvider',
       .when('/fantasyteams/create',               { templateUrl: 'views/fantasyteams/edit.html', authRequired: true })
       .when('/fantasyteams/:fantasyTeamId',       { templateUrl: 'views/fantasyteams/view.html', authRequired: true })
       .when('/fantasyteams/:fantasyTeamId/edit',  { templateUrl: 'views/fantasyteams/edit.html', authRequired: true })
+
+
+
+
       .otherwise(       { redirectTo: '/' });
     }])
 
@@ -33,6 +41,6 @@ app.config(['$routeProvider',
 
   // your Firebase URL goes here
   // should look something like: https://blahblahblah.firebaseio.com
-  .constant('FBURL', 'https://f-f.firebaseio.com/')
+  .constant('FBURL', 'https://my-futsal.firebaseio.com/')
 
 
